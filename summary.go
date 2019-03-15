@@ -96,7 +96,7 @@ func (s *summary) Count(uncheckedIndex int) uint32 {
 	return s.counts[uncheckedIndex]
 }
 
-// return the index of the last item which the sum of counts
+// FloorSum returns the index of the last item which the sum of counts
 // of items before it is less than or equal to `sum`. -1 in
 // case no centroid satisfies the requirement.
 // Since it's cheap, this also returns the `HeadSum` until
